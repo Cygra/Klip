@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E191FC4E29A9BC42005698EE /* KlipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191FC4D29A9BC42005698EE /* KlipApp.swift */; };
+		E191FC5029A9BC42005698EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191FC4F29A9BC42005698EE /* ContentView.swift */; };
+		E191FC5229A9BC44005698EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E191FC5129A9BC44005698EE /* Assets.xcassets */; };
+		E191FC5529A9BC44005698EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E191FC5429A9BC44005698EE /* Preview Assets.xcassets */; };
+		E191FC6029A9BC45005698EE /* KlipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191FC5F29A9BC45005698EE /* KlipTests.swift */; };
+		E191FC6A29A9BC45005698EE /* KlipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191FC6929A9BC45005698EE /* KlipUITests.swift */; };
+		E191FC6C29A9BC45005698EE /* KlipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191FC6B29A9BC45005698EE /* KlipUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E191FC5C29A9BC45005698EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E191FC4229A9BC41005698EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E191FC4929A9BC41005698EE;
+			remoteInfo = Klip;
+		};
+		E191FC6629A9BC45005698EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E191FC4229A9BC41005698EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E191FC4929A9BC41005698EE;
+			remoteInfo = Klip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E191FC4A29A9BC42005698EE /* Klip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E191FC4D29A9BC42005698EE /* KlipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlipApp.swift; sourceTree = "<group>"; };
+		E191FC4F29A9BC42005698EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E191FC5129A9BC44005698EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E191FC5429A9BC44005698EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E191FC5629A9BC44005698EE /* Klip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Klip.entitlements; sourceTree = "<group>"; };
+		E191FC5B29A9BC45005698EE /* KlipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E191FC5F29A9BC45005698EE /* KlipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlipTests.swift; sourceTree = "<group>"; };
+		E191FC6529A9BC45005698EE /* KlipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KlipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E191FC6929A9BC45005698EE /* KlipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlipUITests.swift; sourceTree = "<group>"; };
+		E191FC6B29A9BC45005698EE /* KlipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlipUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E191FC4729A9BC41005698EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E191FC5829A9BC45005698EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E191FC6229A9BC45005698EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E191FC4129A9BC41005698EE = {
+			isa = PBXGroup;
+			children = (
+				E191FC4C29A9BC42005698EE /* Klip */,
+				E191FC5E29A9BC45005698EE /* KlipTests */,
+				E191FC6829A9BC45005698EE /* KlipUITests */,
+				E191FC4B29A9BC42005698EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E191FC4B29A9BC42005698EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E191FC4A29A9BC42005698EE /* Klip.app */,
+				E191FC5B29A9BC45005698EE /* KlipTests.xctest */,
+				E191FC6529A9BC45005698EE /* KlipUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E191FC4C29A9BC42005698EE /* Klip */ = {
+			isa = PBXGroup;
+			children = (
+				E191FC4D29A9BC42005698EE /* KlipApp.swift */,
+				E191FC4F29A9BC42005698EE /* ContentView.swift */,
+				E191FC5129A9BC44005698EE /* Assets.xcassets */,
+				E191FC5629A9BC44005698EE /* Klip.entitlements */,
+				E191FC5329A9BC44005698EE /* Preview Content */,
+			);
+			path = Klip;
+			sourceTree = "<group>";
+		};
+		E191FC5329A9BC44005698EE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E191FC5429A9BC44005698EE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E191FC5E29A9BC45005698EE /* KlipTests */ = {
+			isa = PBXGroup;
+			children = (
+				E191FC5F29A9BC45005698EE /* KlipTests.swift */,
+			);
+			path = KlipTests;
+			sourceTree = "<group>";
+		};
+		E191FC6829A9BC45005698EE /* KlipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E191FC6929A9BC45005698EE /* KlipUITests.swift */,
+				E191FC6B29A9BC45005698EE /* KlipUITestsLaunchTests.swift */,
+			);
+			path = KlipUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E191FC4929A9BC41005698EE /* Klip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E191FC6F29A9BC45005698EE /* Build configuration list for PBXNativeTarget "Klip" */;
+			buildPhases = (
+				E191FC4629A9BC41005698EE /* Sources */,
+				E191FC4729A9BC41005698EE /* Frameworks */,
+				E191FC4829A9BC41005698EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Klip;
+			productName = Klip;
+			productReference = E191FC4A29A9BC42005698EE /* Klip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E191FC5A29A9BC45005698EE /* KlipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E191FC7229A9BC45005698EE /* Build configuration list for PBXNativeTarget "KlipTests" */;
+			buildPhases = (
+				E191FC5729A9BC45005698EE /* Sources */,
+				E191FC5829A9BC45005698EE /* Frameworks */,
+				E191FC5929A9BC45005698EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E191FC5D29A9BC45005698EE /* PBXTargetDependency */,
+			);
+			name = KlipTests;
+			productName = KlipTests;
+			productReference = E191FC5B29A9BC45005698EE /* KlipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E191FC6429A9BC45005698EE /* KlipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E191FC7529A9BC45005698EE /* Build configuration list for PBXNativeTarget "KlipUITests" */;
+			buildPhases = (
+				E191FC6129A9BC45005698EE /* Sources */,
+				E191FC6229A9BC45005698EE /* Frameworks */,
+				E191FC6329A9BC45005698EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E191FC6729A9BC45005698EE /* PBXTargetDependency */,
+			);
+			name = KlipUITests;
+			productName = KlipUITests;
+			productReference = E191FC6529A9BC45005698EE /* KlipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E191FC4229A9BC41005698EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E191FC4929A9BC41005698EE = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E191FC5A29A9BC45005698EE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E191FC4929A9BC41005698EE;
+					};
+					E191FC6429A9BC45005698EE = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E191FC4929A9BC41005698EE;
+					};
+				};
+			};
+			buildConfigurationList = E191FC4529A9BC41005698EE /* Build configuration list for PBXProject "Klip" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E191FC4129A9BC41005698EE;
+			productRefGroup = E191FC4B29A9BC42005698EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E191FC4929A9BC41005698EE /* Klip */,
+				E191FC5A29A9BC45005698EE /* KlipTests */,
+				E191FC6429A9BC45005698EE /* KlipUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E191FC4829A9BC41005698EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E191FC5529A9BC44005698EE /* Preview Assets.xcassets in Resources */,
+				E191FC5229A9BC44005698EE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E191FC5929A9BC45005698EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E191FC6329A9BC45005698EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E191FC4629A9BC41005698EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E191FC5029A9BC42005698EE /* ContentView.swift in Sources */,
+				E191FC4E29A9BC42005698EE /* KlipApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E191FC5729A9BC45005698EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E191FC6029A9BC45005698EE /* KlipTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E191FC6129A9BC45005698EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E191FC6C29A9BC45005698EE /* KlipUITestsLaunchTests.swift in Sources */,
+				E191FC6A29A9BC45005698EE /* KlipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E191FC5D29A9BC45005698EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E191FC4929A9BC41005698EE /* Klip */;
+			targetProxy = E191FC5C29A9BC45005698EE /* PBXContainerItemProxy */;
+		};
+		E191FC6729A9BC45005698EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E191FC4929A9BC41005698EE /* Klip */;
+			targetProxy = E191FC6629A9BC45005698EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E191FC6D29A9BC45005698EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E191FC6E29A9BC45005698EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E191FC7029A9BC45005698EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Klip/Klip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Klip/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cygra.Klip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E191FC7129A9BC45005698EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Klip/Klip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Klip/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cygra.Klip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E191FC7329A9BC45005698EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cygra.KlipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Klip";
+			};
+			name = Debug;
+		};
+		E191FC7429A9BC45005698EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cygra.KlipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Klip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Klip";
+			};
+			name = Release;
+		};
+		E191FC7629A9BC45005698EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cygra.KlipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Klip;
+			};
+			name = Debug;
+		};
+		E191FC7729A9BC45005698EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cygra.KlipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Klip;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E191FC4529A9BC41005698EE /* Build configuration list for PBXProject "Klip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E191FC6D29A9BC45005698EE /* Debug */,
+				E191FC6E29A9BC45005698EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E191FC6F29A9BC45005698EE /* Build configuration list for PBXNativeTarget "Klip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E191FC7029A9BC45005698EE /* Debug */,
+				E191FC7129A9BC45005698EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E191FC7229A9BC45005698EE /* Build configuration list for PBXNativeTarget "KlipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E191FC7329A9BC45005698EE /* Debug */,
+				E191FC7429A9BC45005698EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E191FC7529A9BC45005698EE /* Build configuration list for PBXNativeTarget "KlipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E191FC7629A9BC45005698EE /* Debug */,
+				E191FC7729A9BC45005698EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E191FC4229A9BC41005698EE /* Project object */;
+}
