@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E135901B29AA2E2D00DFD230 /* Clipboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E135901A29AA2E2D00DFD230 /* Clipboard.swift */; };
+		E135901E29AB2D8700DFD230 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E135901D29AB2D8700DFD230 /* Consts.swift */; };
 		E191FC4E29A9BC42005698EE /* KlipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191FC4D29A9BC42005698EE /* KlipApp.swift */; };
 		E191FC5029A9BC42005698EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E191FC4F29A9BC42005698EE /* ContentView.swift */; };
 		E191FC5229A9BC44005698EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E191FC5129A9BC44005698EE /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		E135901A29AA2E2D00DFD230 /* Clipboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clipboard.swift; sourceTree = "<group>"; };
 		E135901C29AA37F500DFD230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E135901D29AB2D8700DFD230 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		E191FC4A29A9BC42005698EE /* Klip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E191FC4D29A9BC42005698EE /* KlipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlipApp.swift; sourceTree = "<group>"; };
 		E191FC4F29A9BC42005698EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				E191FC5629A9BC44005698EE /* Klip.entitlements */,
 				E191FC5329A9BC44005698EE /* Preview Content */,
 				E135901A29AA2E2D00DFD230 /* Clipboard.swift */,
+				E135901D29AB2D8700DFD230 /* Consts.swift */,
 			);
 			path = Klip;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E135901B29AA2E2D00DFD230 /* Clipboard.swift in Sources */,
+				E135901E29AB2D8700DFD230 /* Consts.swift in Sources */,
 				E191FC5029A9BC42005698EE /* ContentView.swift in Sources */,
 				E191FC4E29A9BC42005698EE /* KlipApp.swift in Sources */,
 			);

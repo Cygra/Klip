@@ -13,6 +13,7 @@ struct ContentView: View {
     var body: some View {
         ForEach(clipboard.items.reversed(), id: \.self) { it in
             Button(it) {
+                clipboard.paste(it: it)
             }
         }
     }
