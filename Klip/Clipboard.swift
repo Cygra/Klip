@@ -8,14 +8,20 @@
 import Foundation
 import SwiftUI
 
+struct ClipboardItem: Identifiable {
+    let id = UUID()
+    var pasteboardType: NSPasteboard.PasteboardType
+    var data: Data
+}
+
 class Clipboard: ObservableObject {
     private let pasteboard = NSPasteboard.general
     private var timer = Timer()
     private var changeCount: Int
     
-    @Published var items: [String] = []
+    @Published var items: Array<ClipboardItem> = []
     
-    func addItemToItems(it: String) {
+    func addItemToItems(it: ClipboardItem) {
         if items.count > 9 {
             items = Array(items.dropFirst(items.count - 9))
         }
@@ -28,9 +34,15 @@ class Clipboard: ObservableObject {
         }
         changeCount = pasteboard.changeCount
         pasteboard.pasteboardItems?.forEach({it in
-            let result = it.string(forType: .string) ?? ""
-            if result != "" && it.string(forType: Constants.INTERNAL_TYPE) != Constants.INTERNAL_CONTENT {
-                addItemToItems(it: result)
+            let fromKlip = it.string(forType: Constants.INTERNAL_TYPE) == Constants.INTERNAL_CONTENT
+            guard !fromKlip else {
+                return
+            }
+            for pasteboardType in [NSPasteboard.PasteboardType.fileURL, NSPasteboard.PasteboardType.string] {
+                if let result = it.data(forType: pasteboardType) {
+                    addItemToItems(it: ClipboardItem(pasteboardType: pasteboardType, data: result))
+                    break
+                }
             }
         })
     }
@@ -45,9 +57,9 @@ class Clipboard: ObservableObject {
         timer.invalidate()
     }
     
-    func paste(it: String) {
+    func paste(it: ClipboardItem) {
         pasteboard.clearContents()
-        pasteboard.setString(it, forType: .string)
+        pasteboard.setData(it.data, forType: it.pasteboardType)
         pasteboard.setString(Constants.INTERNAL_CONTENT, forType: Constants.INTERNAL_TYPE)
     }
     
