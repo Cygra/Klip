@@ -18,21 +18,19 @@ struct KlipApp: App {
     
     var body: some Scene {
         MenuBarExtra("1", systemImage: "1.circle") {
-            Button("Quit") {
-                NSApplication.shared.terminate(nil)
-            }
-            Divider()
             Button("About") {
                 NSApplication.shared.orderFrontStandardAboutPanel()
                 NSApp.activate(ignoringOtherApps: true)
             }
-            Divider()
-            Button("Preference") {
-                
+            Button("Preferences") {
             }
             Divider()
             ContentView()
                 .environmentObject(clipboard)
+            Divider()
+            Button("Quit") {
+                NSApplication.shared.terminate(nil)
+            }
         }
     }
 }
