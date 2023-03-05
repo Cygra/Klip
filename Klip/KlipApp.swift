@@ -10,16 +10,15 @@ import SwiftUI
 @available(macOS 13.0, *)
 @main
 struct KlipApp: App {
-    @StateObject private var clipboard: Clipboard = Clipboard()
-    
+    @StateObject private var clipboard: Clipboard = .init()
+
     var body: some Scene {
         MenuBarExtra("1", systemImage: "1.circle") {
             Button("About") {
                 NSApplication.shared.orderFrontStandardAboutPanel()
                 NSApp.activate(ignoringOtherApps: true)
             }
-            Button("Preferences") {
-            }
+            Button("Preferences") {}
             Divider()
             ContentView()
                 .environmentObject(clipboard)

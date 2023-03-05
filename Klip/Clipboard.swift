@@ -19,7 +19,7 @@ class Clipboard: ObservableObject {
     private var timer = Timer()
     private var changeCount: Int
     
-    @Published var items: Array<ClipboardItem> = []
+    @Published var items: [ClipboardItem] = []
     
     func addItemToItems(it: ClipboardItem) {
         if items.count > 9 {
@@ -28,23 +28,26 @@ class Clipboard: ObservableObject {
         items.append(it)
     }
     
-    func checkForChangesInPasteboard () {
+    func checkForChangesInPasteboard() {
         guard pasteboard.changeCount != changeCount else {
             return
         }
         changeCount = pasteboard.changeCount
-        pasteboard.pasteboardItems?.forEach({it in
+        pasteboard.pasteboardItems?.forEach { it in
             let fromKlip = it.string(forType: Constants.INTERNAL_TYPE) == Constants.INTERNAL_CONTENT
             guard !fromKlip else {
                 return
             }
-            for pasteboardType in [NSPasteboard.PasteboardType.fileURL, NSPasteboard.PasteboardType.string] {
+            for pasteboardType in [
+                NSPasteboard.PasteboardType.fileURL,
+                NSPasteboard.PasteboardType.string,
+            ] {
                 if let result = it.data(forType: pasteboardType) {
                     addItemToItems(it: ClipboardItem(pasteboardType: pasteboardType, data: result))
                     break
                 }
             }
-        })
+        }
     }
     
     func start() {
@@ -67,6 +70,7 @@ class Clipboard: ObservableObject {
         changeCount = pasteboard.changeCount
         start()
     }
+
     deinit {
         stop()
     }
