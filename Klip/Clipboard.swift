@@ -20,12 +20,21 @@ class Clipboard: ObservableObject {
     private var changeCount: Int
     
     @Published var items: [ClipboardItem] = []
+    @Published var isTick: Bool = false
+    
+    func toggleTick() {
+        isTick = true
+        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) {_ in
+            self.isTick = false
+        }
+    }
     
     func addItemToItems(it: ClipboardItem) {
+        toggleTick()
         if items.count > 9 {
-            items = Array(items.dropFirst(items.count - 9))
+            items = Array(items.dropLast(1))
         }
-        items.append(it)
+        items.insert(it, at: 0)
     }
     
     func checkForChangesInPasteboard() {
@@ -39,6 +48,7 @@ class Clipboard: ObservableObject {
                 return
             }
             for pasteboardType in [
+                NSPasteboard.PasteboardType.png,
                 NSPasteboard.PasteboardType.fileURL,
                 NSPasteboard.PasteboardType.string,
             ] {
@@ -51,7 +61,7 @@ class Clipboard: ObservableObject {
     }
     
     func start() {
-        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+        timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { _ in
             self.checkForChangesInPasteboard()
         }
     }
@@ -64,6 +74,7 @@ class Clipboard: ObservableObject {
         pasteboard.clearContents()
         pasteboard.setData(it.data, forType: it.pasteboardType)
         pasteboard.setString(Constants.INTERNAL_CONTENT, forType: Constants.INTERNAL_TYPE)
+        toggleTick()
     }
     
     init() {
