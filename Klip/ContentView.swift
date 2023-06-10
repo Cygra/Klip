@@ -25,7 +25,7 @@ struct ContentView: View {
 
     var body: some View {
         ForEach(
-            Array(clipboard.items.prefix(10).enumerated()),
+            Array(clipboard.items.prefix(Constants.LIST_CAPASITY).enumerated()),
             id: \.offset
         ) { ind, it in
             if it.pasteboardType == .string || it.pasteboardType == .fileURL {

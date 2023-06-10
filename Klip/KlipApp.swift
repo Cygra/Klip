@@ -12,11 +12,23 @@ import SwiftUI
 struct KlipApp: App {
     @StateObject private var clipboard: Clipboard = .init()
     @Environment(\.openWindow) var openWindow
+    @State private var animationAmount = 0.0
+
+    func onMediaClick(it: ClipboardItem) {
+        animationAmount = 1
+        clipboard.paste(it: it)
+        Timer.scheduledTimer(
+            withTimeInterval: Constants.TICK_INTERVAL, repeats: false
+        ) { _ in
+            animationAmount = 0
+            //            NSApplication.shared.keyWindow?.close()
+        }
+    }
 
     var body: some Scene {
         MenuBarExtra(
             "Klip Menu Bar",
-            systemImage: clipboard.isTick ? "checkmark.circle" :
+            systemImage: clipboard.isTicking ? "checkmark.circle" :
                 clipboard.items.count > 0
                 ? "\(clipboard.items.count).circle"
                 : "scissors.circle"
@@ -30,7 +42,7 @@ struct KlipApp: App {
                     NSApplication.shared.orderFrontStandardAboutPanel()
                     NSApp.activate(ignoringOtherApps: true)
                 }
-//                Button("Preferences") {}
+                //                Button("Preferences") {}
                 Divider()
                 Button("Show all medias") {
                     NSApp.activate(ignoringOtherApps: true)
@@ -48,6 +60,14 @@ struct KlipApp: App {
             }.padding()
         }
         Window("Medias", id: Constants.MEDIA_WINDOW_ID) {
+            if animationAmount != 0 {
+                HStack {
+                    Image(systemName: "checkmark.circle")
+                    Text("Content added to clipboard!")
+                }.padding([.top])
+//                    .scaleEffect(x: 1.0, y: animationAmount)
+//                    .animation(.easeInOut(duration: 0.3), value: animationAmount)
+            }
             ScrollView {
                 VStack(
                     alignment: .leading,
@@ -62,8 +82,7 @@ struct KlipApp: App {
                             || it.pasteboardType == .png
                         {
                             Button(action: {
-                                clipboard.paste(it: it)
-                                NSApplication.shared.keyWindow?.close()
+                                onMediaClick(it: it)
                             }) {
                                 if it.pasteboardType == .fileURL {
                                     AsyncImage(url: URL(string: filePath)) { image in
@@ -80,15 +99,15 @@ struct KlipApp: App {
                                         .cornerRadius(8)
                                 }
                             }.buttonStyle(BorderlessButtonStyle())
+                            Divider()
                         } else if it.pasteboardType == .fileURL {
                             Button(action: {
-                                clipboard.paste(it: it)
-                                NSApplication.shared.keyWindow?.close()
+                                onMediaClick(it: it)
                             }) {
                                 Text("[\(filePath)]")
                             }.buttonStyle(BorderlessButtonStyle())
+                            Divider()
                         }
-                        Divider()
                     }
                 }
             }.frame(width: 300).padding()

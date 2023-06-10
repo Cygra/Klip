@@ -20,18 +20,18 @@ class Clipboard: ObservableObject {
     private var changeCount: Int
     
     @Published var items: [ClipboardItem] = []
-    @Published var isTick: Bool = false
+    @Published var isTicking: Bool = false
     
     func toggleTick() {
-        isTick = true
-        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) {_ in
-            self.isTick = false
+        isTicking = true
+        Timer.scheduledTimer(withTimeInterval: Constants.TICK_INTERVAL, repeats: false) {_ in
+            self.isTicking = false
         }
     }
     
     func addItemToItems(it: ClipboardItem) {
         toggleTick()
-        if items.count > 9 {
+        if items.count > Constants.LIST_CAPASITY - 1 {
             items = Array(items.dropLast(1))
         }
         items.insert(it, at: 0)

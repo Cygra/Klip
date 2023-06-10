@@ -12,4 +12,6 @@ struct Constants {
     static let INTERNAL_TYPE = NSPasteboard.PasteboardType(rawValue: "internal.Klip.type")
     static let INTERNAL_CONTENT = "internal"
     static let MEDIA_WINDOW_ID = "medias"
+    static let TICK_INTERVAL = 1.0
+    static let LIST_CAPASITY = 10
 }
