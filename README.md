@@ -8,12 +8,10 @@ Text copied preserves the formats. If you'd like raw text, paste with cmd+shift+
 
 TODO:
 
-- [ ] install with brew --cask
-
 - [ ] better UI
 
 - [ ] about page
 
 - [ ] user settings
 
-- [ ] application icon
+- [x] application icon
