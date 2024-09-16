@@ -39,6 +39,7 @@
 		E135901A29AA2E2D00DFD230 /* Clipboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clipboard.swift; sourceTree = "<group>"; };
 		E135901C29AA37F500DFD230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E135901D29AB2D8700DFD230 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		E1846DA12C97DF4F0069277B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E191FC4A29A9BC42005698EE /* Klip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Klip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E191FC4D29A9BC42005698EE /* KlipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KlipApp.swift; sourceTree = "<group>"; };
 		E191FC4F29A9BC42005698EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +81,7 @@
 		E191FC4129A9BC41005698EE = {
 			isa = PBXGroup;
 			children = (
+				E1846DA12C97DF4F0069277B /* README.md */,
 				E191FC4C29A9BC42005698EE /* Klip */,
 				E191FC5E29A9BC45005698EE /* KlipTests */,
 				E191FC6829A9BC45005698EE /* KlipUITests */,
