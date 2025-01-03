@@ -1,10 +1,12 @@
 # Klip ✂️
 
-Klip records the latest 10 items in your clipboard.
+Klip is an open source, offline software that helps you manage and access your recent copy history.
 
-With Klip, you can quickly access the code, phone number☎️, addresses🏡, and even IMAGE💜 you copied just minutes ago and paste them again.
+It records the latest 10 items in your clipboard.
 
-Text copied preserves the formats🪄. If you'd like raw text, paste with cmd+shift+v.
+With Klip, you can quickly access text 📓, code 💾, phone numbers ☎️, addresses 🏡, and even images 🖼️ you copied just minutes ago and paste them again.
+
+Formatted text copied preserves the formats🪄. If you'd like raw text, paste with cmd + shift + v.
 
 TODO:
 

@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: monospace;
+}
+
+.title {
+    text-align: center;
+    margin: 8px 0 0;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 18px;
+    margin: 8px 0 0;
+    padding: 0;
+    color: #B01313;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.description {
+    width: 45%;
+    font-size: 20px;
+}
+
+.description span {
+    font-size: 32px;
+}
+
+.github-code-button {
+    color: #B01313;
+}
+
+.github-button {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    color: #B01313;
+    border: 2px solid #B01313;
+    transition: all 0.3s ease;
+    padding: 8px;
+}
+
+.github-button:hover {
+    box-shadow: 4px 4px 6px rgba(176, 19, 19, 0.2);
+}
+
+.github-button svg {
+    margin-right: 8px;
+}
